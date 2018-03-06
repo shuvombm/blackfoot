@@ -1,0 +1,402 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: BlackFoot
+    Template URI: 
+    Description: 
+    Author: 
+    Author 
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+
+
+/* Base CSS */
+@font-face {
+    font-family: 'Acumin Pro Wide';
+    src: url('./assets/fonts/AcuminProWide-Regular.eot');
+    src: url('./assets/fonts/AcuminProWide-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/AcuminProWide-Regular.woff2') format('woff2'),
+        url('./assets/fonts/AcuminProWide-Regular.woff') format('woff'),
+        url('./assets/fonts/AcuminProWide-Regular.ttf') format('truetype'),
+        url('./assets/fonts/AcuminProWide-Regular.svg#AcuminProWide-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro Wide';
+    src: url('./assets/fonts/AcuminProWide-Bold.eot');
+    src: url('./assets/fonts/AcuminProWide-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/AcuminProWide-Bold.woff2') format('woff2'),
+        url('./assets/fonts/AcuminProWide-Bold.woff') format('woff'),
+        url('./assets/fonts/AcuminProWide-Bold.ttf') format('truetype'),
+        url('./assets/fonts/AcuminProWide-Bold.svg#AcuminProWide-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acumin Pro Wide';
+    src: url('./assets/fonts/AcuminProWide-Semibold.eot');
+    src: url('./assets/fonts/AcuminProWide-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/AcuminProWide-Semibold.woff2') format('woff2'),
+        url('./assets/fonts/AcuminProWide-Semibold.woff') format('woff'),
+        url('./assets/fonts/AcuminProWide-Semibold.ttf') format('truetype'),
+        url('./assets/fonts/AcuminProWide-Semibold.svg#AcuminProWide-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+    .alignleft {
+        float: left;
+        margin-right: 15px;
+    }
+    .alignright {
+        float: right;
+        margin-left: 15px;
+    }
+    .aligncenter {
+        display: block;
+        margin: 0 auto 15px;
+    }
+    a:focus { outline: 0 solid }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        margin: 0 0 15px;
+        font-weight: 600;
+        color: #333;
+        font-family: 'Acumin Pro Wide';
+    }
+    p{
+      font-family: 'Acumin Pro Wide';
+    }
+    a{
+      font-family: 'Acumin Pro Wide';
+    }
+    a:hover, a:focus{
+        text-decoration: none;
+        outline: none;
+        border: none;
+    }
+    body{
+        color: #919194;
+        line-height: 1.8;
+        font-size: 16px;
+        font-style: normal;
+    }
+
+ /* Backgrounds */   
+.slide-bg-1{background-image: url(./assets/images/hero-area-bg.jpg); }  
+.gallery-bg-1{background-image: url(./assets/images/gallery-bg-1.jpg); }  
+.gallery-bg-2{background-image: url(./assets/images/gallery-bg-2.jpg); }  
+.gallery-bg-3{background-image: url(./assets/images/gallery-bg-3.jpg); }  
+.gallery-bg-4{background-image: url(./assets/images/gallery-bg-4.jpg); }  
+.gallery-bg-5{background-image: url(./assets/images/gallery-bg-5.jpg); }  
+.testimonial-area{background-image: url(./assets/images/testimonial-bg.jpg); } 
+.service-bg-1{background-image: url(./assets/images/service-bg-1.jpg); } 
+.service-bg-2{background-image: url(./assets/images/service-bg-2.jpg); } 
+.service-bg-3{background-image: url(./assets/images/service-bg-3.jpg); } 
+.service-bg-4{background-image: url(./assets/images/service-bg-4.jpg); } 
+
+
+
+/* Owl carousel */
+.testimonial-wrapper .owl-nav div, .site-gallery-wrapper .owl-nav div{
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  color: #fff;
+  line-height: 40px;
+  margin-top: -40px;
+  font-size: 30px;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.testimonial-wrapper .owl-nav div{
+  left: -50px;
+}
+div.testimonial-wrapper .owl-nav div.owl-next{
+  left: auto;
+  right: -50px;
+}
+.testimonial-wrapper .owl-nav div.owl-next, .site-gallery-wrapper .owl-nav div.owl-next{
+  left: auto;
+  right: 25px;
+}
+.testimonial-area:hover .owl-nav div, .site-gallery-wrapper:hover .owl-nav div {
+  opacity: .7;
+  visibility: visible;
+}
+
+.testimonial-wrapper .owl-dots .owl-dot, .site-gallery-wrapper .owl-dots .owl-dot{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 50%;
+}
+.testimonial-wrapper .owl-dots, .site-gallery-wrapper .owl-dots{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -60px;
+}
+.testimonial-wrapper .owl-dots .active, .site-gallery-wrapper .owl-dots .active{
+  background-color: #fff;
+}
+.site-gallery-wrapper .owl-dots {
+    bottom: 23px;
+    text-align: center;
+}
+
+
+.section-padding {
+  padding: 80px 0;
+}
+.slicknav-responsive-menu{
+   display: none;
+}
+
+.mainmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mainmenu ul li {
+  display: inline-block;
+}
+.mainmenu ul li a {
+  display: block;
+  color: #919194;
+  text-transform: capitalize;
+  padding: 20px 0px;
+  padding-right: 45px;
+  transition: .3s;
+  font-family: 'Acumin Pro Wide';
+}
+.social-btn a {
+  display: inline-block;
+  color: #0056ba;
+  height: 33px;
+  width: 33px;
+  border: 1px solid #0056ba;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  border-radius: 50%;
+  margin-left: 8px;
+  transition: .3s;
+}
+.social-btn {
+  padding-top: 17px;
+}
+
+.header-top:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  background: -moz-linear-gradient(top, rgba(6,50,155,1) 0%, rgba(23,148,234,1) 99%);
+  background: -webkit-linear-gradient(top, rgba(6,50,155,1) 0%,rgba(23,148,234,1) 99%);
+  background: linear-gradient(to bottom, rgba(6,50,155,1) 0%,rgba(23,148,234,1) 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06329b', endColorstr='#1794ea',GradientType=0 );
+  height: 8px;
+  width: 100%;
+}
+.header-top {
+  border-bottom: 1px solid #e1e1e1;
+  position: relative;
+  padding-top: 8px;
+}
+
+a.bodered-btn, input[type="submit"], button[type="submit"] {
+  display: inline-block;
+  color: #0346a7;
+  border: 2px solid #0346a7;
+  padding: 7px 20px;
+  padding-bottom: 15px;
+  position: relative;
+  text-transform: uppercase;
+  transition: .3s;
+  font-weight: 600;
+}
+a.bodered-btn:after {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background-color: #0346A7;
+  content: "";
+}
+.contact-no p {
+    color: #010101;
+}
+.contact-no a.bodered-btn {
+  font-size: 26px;
+  font-weight: 700;
+}
+.header-bottom {
+  padding: 20px 0;
+}
+
+html,body, .slider-area {
+  height: 100%;
+}
+.single-slider {
+  height: 100%;
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+.slide-inner {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.single-slider h1 {
+  color: #fff;
+  text-shadow: 0px 10px 8px #000;
+  margin-bottom: 65px;
+  font-weight: 700;
+}
+
+
+.single-slider a.bodered-btn {
+  color: #fff;
+  border-color: #1C95DC;
+}
+.single-slider a.bodered-btn:after {
+  background-color: #1C95DC;
+}
+.cta-area h3 {
+  font-size: 26px;
+}
+.cta-area p {
+  margin-bottom: 48px;
+}
+.gallery-area {
+    overflow: hidden;
+}
+.single-gallery-box {
+  height: 375px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.promo-bg {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 270px;
+  margin: 80px 0;
+}
+.promo-bg:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 47%;
+  height: 80%;
+  content: "";
+  background-image: url(assets/images/absulate-promo-bg-1.jpg);
+}
+.promo-bg:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 52%;
+  height: 225px;
+  content: "";
+  background-image: url(assets/images/absulate-promo-bg-2.jpg);
+}
+a.promo-link {
+  color: #0057ba;
+  border-bottom: 1px solid;
+  font-weight: 700;
+  font-style: italic;
+}
+.single-testimonial {
+  color: #fff;
+  font-size: 26px;
+}
+.testimonial-area {
+  padding: 85px 0;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.service-box-bg {
+  height: 200px;
+  margin-bottom: 20px;
+}
+.single-service-box h4 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+a.service-more-btn {
+  color: #919194;
+  border-bottom: 1px solid #0056ba;
+  text-transform: capitalize;
+}
+.single-service-box p {
+  margin-bottom: 25px;
+}
+.section-title h3 {
+  font-size: 26px;
+  margin-bottom: 60px;
+}
+
+.footer-area {
+  background-color: #363636;
+  padding: 40px 0;
+}
+
+.social-btn.footer-social {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.social-btn.footer-social a {
+  color: #999;
+  border-color: #919194;
+}
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-menu ul li {
+  display: inline-block;
+}
+.footer-menu ul li a {
+  display: block;
+  color: #919194;
+  text-transform: capitalize;
+  padding: 10px;
+  position: relative;
+}
+.footer-menu ul li a:after {
+  height: 12px;
+  width: 1px;
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 16px;
+  background: #919194;
+}
+.footer-menu ul li:last-child a::after {
+  display: none;
+}
